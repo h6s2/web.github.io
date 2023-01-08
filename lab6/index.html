@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>lab3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <div class="square">
+
+    <div class="main-block"><div class="first-block">
+      <div class="first-block-text">
+        <h1>Header</h1>
+
+      </div>
+      </div>
+
+      <div class="third-block">
+        <div class="menu-logo">
+          <p class="menu-text">
+            Menu
+          </p>
+
+        </div>
+
+        <div class="menu-elements-list">
+          <a class="menu-elements" href="main.html">Home
+          </a>
+
+        </div>
+
+
+
+      </div><div class="middle-blocks">
+        <div class="forth-block">
+          <p class="main-space">
+            Main Space
+          </p>
+        </div>
+        <div class="fifth-block">
+
+          <div class="slider" id="slider">  
+            <button class="btn prev-button" onclick="(plusSlides(-1))">&#8249;</button>
+            <button class="btn next-button" onclick="(plusSlides(1))">&#8250;</button>
+
+            <div class="slide fade">
+              <img src="images/img1.jpg">
+              <p class="slide-text">1</p>
+            </div>
+
+            <div class="slide fade">
+              <img src="images/img2.jpg">
+              <p class="slide-text">2</p>
+            </div>
+
+            <div class="slide fade">
+              <img src="images/img3.jpg">
+              <p class="slide-text">3</p>
+            </div>
+            
+            
+
+          </div>
+
+          
+
+          </div>
+
+        </div>
+
+      </div>
+      
+      <div class="second-block">
+        <form class="edit-form">
+          <div>
+            <label><strong>Add an image to the slider</strong></label>
+            <label>Insert the url below</label>
+            <input type="text"  id="image-link">
+            <label>Add a text to your slider</label>
+            <input type="text" id="image-text">
+            <button type="button" id="add-slider-button" onclick="addSlide()">Add slide</button>
+            <button type="button" id="delete-slider-button" onclick="deleteSlide()">Delete current slide</button>
+          </div> 
+
+          <div>
+            <label style="margin-top:20px"><strong>Change slider's size</strong></label>
+            <input type="text" id="height-text" placeholder="height">
+            <input type="text" id="width-text" placeholder="width">
+            <button type="button" id="add-slider-button" onclick="changeSize()">Apply</button>  
+
+          </div>
+
+          
+
+        </form>
+        
+
+    </div>
+
+  </div>
+
+    <div class="sixth-block">
+      <div class="sixth-block-text">
+        <h2>Footer</h2>
+      </div>
+
+    </div>
+  </body>
+
+
+
+</html>

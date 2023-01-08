@@ -1,0 +1,296 @@
+body{
+  margin:0;
+}
+.square{
+  height:600px;
+  width:100%;
+  display:flex;
+}
+.main-block{
+  height:100%;
+  width:80%;
+}
+
+.first-block{
+  background-color:#C6D9F1;
+  width:100%;
+  height:20%;
+}
+
+.second-block{
+  background-color:#EAF1DD;
+  width:20%;
+  height:100%;
+}
+.third-block{
+  display: inline-block;
+  width:20%;
+  height:80%;
+  background-color:#FDE9D9;
+  vertical-align: top
+
+}
+.middle-blocks{
+  display: inline-block;
+  width:80%;
+  height:80%;
+}
+.forth-block{
+  width:100%;
+  height:10%;
+  background-color:#DB5A04;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.fifth-block{
+  width:100%;
+  height:90%;
+  background-color: #FFFFFF;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.sixth-block{
+  width:100%;
+  height:121px;
+  background-color: #C6D9F1;
+}
+
+.first-block-text{
+  display:flex;
+  color:white;
+  height: 100%;
+  align-items: center;
+}
+.sixth-block-text{
+  display:flex;
+  color:white;
+  height: 100%;
+  align-items: center;
+  justify-content:flex-end;
+}
+.first-block-text h1{
+  margin:0;
+  margin-left: 30px;
+}
+.sixth-block-text h2{
+  margin:0;
+  margin-right: 40px;
+}
+.menu-text{
+  margin:0;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  text-align:center;
+  font-size: 1.6rem;
+  font-family: "Arial";
+  border-bottom: solid;
+  border-top:solid;
+  margin-bottom: 0.5em;
+}
+.menu-elements{
+  display:block;
+  color:black;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  font-size:1.25rem;
+  font-family:"Arial";
+  transition: 0.15s;
+  text-decoration: none;
+  text-align: center;
+}
+.menu-elements:hover{
+  background-color: #CCCCCC;
+  cursor:pointer;
+
+}
+.main-space{
+  margin:0;
+  font-size: 1.75rem;
+  color:white;
+}
+
+p{
+  font-family: "Arial";
+}
+.fifth-block-text{
+  margin:0;
+  padding-top:1em;
+  padding-left:0.75em;
+  padding-right:0.75em;
+  font-size: 1.25rem;
+}
+.second-block-text{
+  margin:0;
+  padding:1em 0.75em;
+  font-size: 1.25rem;
+}
+
+
+
+
+
+
+@media (max-width: 700px){
+  html{
+    font-size:12px;
+  }
+  .square{
+    display:flex;
+    flex-direction: column;
+  }
+  .main-block{
+    width:100%;
+    height: 80%;
+    display:flex;
+    flex-direction:column;
+  }
+  .first-block{
+    width:100%;
+    height:20%;
+  }
+  .second-block{
+    width:100%;
+    height:25%;
+  }
+  .third-block{
+    width:100%;
+    height:15%;
+  }
+  .middle-blocks{
+    width:100%;
+    height:60%;
+  }
+  .menu-elements-list{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    height:50%;
+  }
+  .menu-elements{
+    padding-left:0.25em;
+    padding-right:0.25em;
+  }
+  .menu-logo{
+    height:50%;
+  }
+  .menu-text{
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    margin:0;
+  }
+  .edit-form label{
+    display:inline-block;
+    margin-top:5px;
+  }
+  .edit-form button{
+    margin-top:10px;
+    display:inline-block;
+  }
+}
+
+.slider{
+  width:80%;
+  height: 100%;
+  position:relative;
+
+}
+.slide{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:none;
+  transition: 0.5s ease;
+}
+
+.slide img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: center;
+  
+  
+}
+
+.prev-button, 
+.next-button{
+  position:absolute;
+  border:none;
+  top:50%;
+  z-index:3;
+  cursor:pointer;
+  color:white;
+  background: none;
+  font-weight: bold;
+  font-size:3rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  padding-bottom:0.2rem;
+  transform: translateY(-50%);
+  color:rgba(255,255,255,.7);
+  background-color:rgba(255,255,255,.4);
+  
+}
+.prev-button{
+  left:0.2em;
+
+}
+.next-button{
+  right:0.2em;
+}
+.prev-button:hover,
+.next-button:hover{
+  color:white;
+  background-color:rgba(255,255,255,.5  );
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.slide-text{
+  margin:0;
+  padding:0;
+  position:absolute;
+  text-align: center;
+  top:50%;
+  width:100%;
+  transform: translateY(-50%);
+  color:white;
+  font-size:3rem;
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+.edit-form{
+  font-size:1.2rem;
+  margin:1em 1em;
+}
+.edit-form label{
+  display:block;
+  margin-top:5px;
+}
+.edit-form button{
+  margin-top:10px;
+  display:block;
+}
+
+
+
+
+@media (max-width: 700px){
+.edit-form label{
+  display:inline-block;
+  margin-top:5px;
+}
+.edit-form button{
+  margin-top:10px;
+  display:inline-block;
+}
+}
