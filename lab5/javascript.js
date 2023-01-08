@@ -48,7 +48,7 @@ mod = document.getElementById("modal1");
 document.getElementById("p3").innerHTML=document.cookie;
 
 function cookies(){
-  if (getCookie("usecookies")!=""){
+  if (getCookie("usecookies")=="false"){
     return;
   }
   /* if (document.cookie!=""){
