@@ -49,12 +49,12 @@ document.getElementById("p3").innerHTML=document.cookie;
 
 function cookies(){
   if (getCookie("usecookies")!=""){
-    console.log("cookie");
     return;
   }
-  if (document.cookie!=""){
+  /* if (document.cookie!=""){
     mod.showModal();
-  }
+  }*/
+  mod.showModal();
   save = document.getElementById("save-button");
   deletec = document.getElementById("delete-button");
 
