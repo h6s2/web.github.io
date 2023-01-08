@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>lab5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+  </head> 
+  <body onload="cookies(),local()">
+    <div class="square">
+
+    <div class="main-block">
+      <div class="first-block">
+      <div class="first-block-text">
+        <h1 id="header-text">Double click me</h1>
+
+      </div>
+      </div>
+
+      <div class="center">
+        <div class="third-block" id="third-block">
+          <div class="menu-logo">
+            <p class="menu-text">
+              Menu
+            </p>
+  
+          </div>
+  
+          <div class="menu-elements-list">
+            <a class="menu-elements" href="main.html">Home
+            </a>
+  
+            <a class="menu-elements" href="">List
+            </a>
+  
+            <a class="menu-elements" href="">
+               Table
+            </a>
+  
+            <a class="menu-elements" href="">
+               Image
+            </a>
+  
+            <a class="menu-elements" href="">
+               Map
+            </a>
+            <form class="form">
+              <label>Cursive</label>
+              <input type="checkbox" id="checkbox" onclick="checkboxx()">
+            </form>
+          </div>
+  
+  
+  
+        </div><div class="middle-blocks">
+          <div class="forth-block">
+            <p class="main-space">
+              Main Space
+            </p>
+          </div>
+          <div class="fifth-block" id="fifth">
+
+            <div class="form">
+              <input id="array" value="1 2 3 1 5 6 1 8 9 10" class="input">
+              <button id="solve-button" type="button" class="butt" onclick="MinNumberCount()">Solve</button>
+  
+              <dialog class="modal" id="modal">
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <button id="close-button">Close</button>
+  
+              </dialog>
+            </div>
+          
+          </div>
+  
+        </div>
+
+      </div>
+    
+
+    </div><div class="second-block" id="second-block">
+
+    </div>
+  </div>
+
+    <div class="sixth-block">
+      <div class="sixth-block-text">
+        <h2 id="footer-text" ondblclick="setForms()">Footer</h2>
+      </div>
+
+    </div>
+
+    <dialog class="modal" id="modal1">
+      <p>Available cookies. Do you want to save them?</p>
+      <p id="p3"></p>
+      <button id="save-button">Yes</button>
+      <button id="delete-button">No</button>
+    </dialog>
+  </body>
+  <script src="javascript.js"></script>
+
+
+
+</html>
