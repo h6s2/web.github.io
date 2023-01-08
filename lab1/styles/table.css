@@ -1,0 +1,16 @@
+.table-name{
+  margin:0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Arial";
+  font-size:30px;
+  text-align: center;
+}
+.table{
+  display:flex;
+  justify-content: center;
+}
+
+.table-body{
+  border:solid;
+}
