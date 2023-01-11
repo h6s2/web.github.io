@@ -6,16 +6,19 @@ let y=0;
 let time=400;
 let pause=0;
 let dist1,dist2,dist3,dist4;
+let arr=[]
 
 document.getElementById("circle").style.transitionDuration=`${(time*0.9)}ms`;
 
 function play(){
+  arr=[];
   document.getElementById("work").style.display="flex";
   document.getElementById("start-button").style.display="inline-block";
   document.getElementById("close-button").style.display="inline-block";
 }
 
 function start(){
+  arr.push("Animation started");
   document.getElementById("start-button").style.display="none";
   document.getElementById("stop-button").style.display="inline-block";
   pause=0;
@@ -82,6 +85,7 @@ function checkBorders(direction){
 }
 
 function reset(){
+  arr.push("Reset");
   pause=1;
   document.getElementById("stop-button").style.display="none";
   document.getElementById("reload-button").style.display="none";
@@ -92,6 +96,7 @@ function reset(){
 }
 
 function stop_anim(){
+  arr.push("Stop button pressed");
   pause=1;
   document.getElementById("reload-button").style.display="none";
   document.getElementById("start-button").style.display="inline-block";
@@ -106,4 +111,9 @@ function close_window(){
   document.getElementById("close-button").style.display="none";
   document.getElementById("message").innerHTML="";
   reset();
+  arr.push("Close button pressed");
+  let dd=document.getElementById("secondblock");
+  for (let i=0;i<arr.length;i++){
+    dd.appendChild(document.createElement('p')).innerHTML=arr[i];
+  }
 }

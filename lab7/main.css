@@ -145,7 +145,8 @@ p{
   }
   .second-block{
     width:100%;
-    height:20%;
+    min-height:120px;
+    height:auto;
   }
   .third-block{
     width:100%;

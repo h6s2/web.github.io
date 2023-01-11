@@ -2,43 +2,48 @@ body{
   margin:0;
 }
 .square{
-  height:600px;
+  min-height: 600px;
+  height:auto;
   width:100%;
 }
 .main-block{
-  height:100%;
+  height:inherit;
   width:80%;
   display:inline-block;
   vertical-align: top;
 }
 
 .first-block{
+  display:block;
   background-color:#C6D9F1;
   width:100%;
-  vertical-align: top;
   height:20%;
 }
 
 .second-block{
+  min-height: 600px;
   background-color:#EAF1DD;
   width:20%;
-  height:100%;
+  height:inherit;
   display:inline-block;
 }
 .third-block{
   display: inline-block;
+  min-height:480px;
+  height:auto;
   width:20%;
-  height:80%;
   background-color:#FDE9D9;
-  vertical-align: top
+  vertical-align: top;
 
 }
 .middle-blocks{
   display: inline-block;
+  min-height:480px;
+  height:auto;
   width:80%;
-  height:80%;
 }
 .forth-block{
+  display:block;
   width:100%;
   height:10%;
   background-color:#DB5A04;

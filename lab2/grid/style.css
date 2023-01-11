@@ -5,12 +5,13 @@ body{
   display: grid;
   grid-template-columns: 4fr 1fr;
   width:100%;
-  height: 600px;
+  height: auto;
+  min-height:600px;
 }
 
 .section1{
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 120px 1fr;
 }
 .section2{
   background-color: #EAF1DD;
@@ -31,7 +32,7 @@ body{
 }
 .section4{
   display: grid;
-  grid-template-rows: 1fr 9fr;
+  grid-template-rows: 55px 1fr;
 }
 .forth-block{
   background-color: #DB5A04;
@@ -43,7 +44,7 @@ body{
 
 .sixth-block{
   width:100%;
-  height:121px;
+  height:120px;
   background-color:#C6D9F1;
 }
 
